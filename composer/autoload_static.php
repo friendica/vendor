@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitFriendica
+class ComposerStaticInitVendor
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -978,10 +978,10 @@ class ComposerStaticInitFriendica
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitFriendica::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitFriendica::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitFriendica::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitFriendica::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitVendor::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitVendor::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitVendor::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitVendor::$classMap;
 
         }, null, ClassLoader::class);
     }

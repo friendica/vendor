@@ -26,7 +26,7 @@
 	},
 	"config": {
 		"vendor-dir": ".",
-		"autoloader-suffix": "Friendica",
+		"autoloader-suffix": "Vendor",
 		"optimize-autoloader": true,
 		"preferred-install": "dist"
 	}
